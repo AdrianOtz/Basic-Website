@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Menu*/
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+
+
+.menu {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+nav a:hover {
+    color: #c7802f;
+    text-decoration: underline;
+}
+
+
+nav a:active {
+    color: #503a017a;
+}
+
+
+/*Productos*/
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 3px 3px 4px #00000038;
+}
+
+
+.productos li {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 0 1.5%;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.productos li:hover {
+    border-color: #c7802f;
+    color: #c7802f;
+    text-shadow: 3px 3px 4px #884f0e73;
+    box-shadow: 5px 5px 10px 2px #4944006e;
+}
+
+
+.productos li:active {
+    border-color: #c09300;
+    box-shadow: 5px 5px 10px 2px #4944006e;
+}
+
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.productos li:hover h2 {
+    font-size: 31px;
+    color: #c7802f;
+}
+
+
+.p-descripcion {
+    font-size: 18px;
+}
+
+
+.p-precios {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/*Footer*/
+footer {
+    text-align: center;
+    background: url(img/bg.jpg);
+    padding: 70px;
+}
+
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+/*Querys Responsive*/
+@media screen and (max-width:480px) {
+    
+    h1 {
+        text-align: center;
+    }
+    
+    nav {
+        position: static;
+    }
+
+    .menu, .productos, .productos li, .p-descripcion, .p-precios, footer, .copyright {
+        width: auto;
+    }
+
+    .productos {
+        padding: 2em 2em;
+    }
+}

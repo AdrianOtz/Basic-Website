@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Menu*/
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+
+
+.menu {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    color: #c7802f;
+    text-decoration: underline;
+}
+
+
+nav a:active {
+    color: #503a017a;
+}
+
+
+/*conenido main*/
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/*Formulario*/
+form {
+    margin: 40px 0;
+}
+
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    text-shadow: 3px 3px 4px #0202023b;
+    letter-spacing: -1px;
+}
+
+
+.main-input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    color: #fa8500;
+    box-shadow: 4px 4px 8px 2px #33333346;
+    border: 2px solid #d18f00a4;
+    border-radius: 3em;
+}
+
+
+.checkbox {
+    margin: 40px 0;
+}
+
+
+fieldset {
+    border-style: none;
+}
+
+
+.btn-form {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: orange;
+    border: none;
+    border-radius: 3em;
+    transition: .2s all;
+    cursor: pointer;
+}
+
+
+.btn-form:hover {
+    background: #367502;
+    transform: scale(1.02);
+    letter-spacing: 4px;
+    color: #66ff00;
+}
+
+/*Tabla*/
+h3 {
+    margin-top: 100px;
+    margin-bottom: -80px;
+    margin-left: 135px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fc8600;
+    text-shadow: 3px 3px 4px #9b5300a6;  
+}
+
+
+table {
+    margin: 100px 80px;
+}
+
+
+thead {
+    background: #555555;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px; 
+}
+
+
+/*Footer*/
+footer {
+    text-align: center;
+    background: url(img/bg.jpg);
+    padding: 70px;
+}
+
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+/*Querys Respnsive*/
+@media screen and (max-width:480px) {
+    
+    h1 {
+        text-align: center;
+    }
+    
+    nav {
+        position: static;
+    }
+
+    .menu, form, fieldset, label, legend, input, select, option, table, .btn-form, footer, .copyright {
+        width: auto;
+        padding: .2em .25em;
+    }
+
+    .checkbox, .main-input {
+        width: 30%;
+    }
+}
